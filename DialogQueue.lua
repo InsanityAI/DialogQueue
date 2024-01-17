@@ -425,6 +425,7 @@ end
 if OVERRIDE_NATIVES and OnInit then OnInit.root("DialogQueue", DialogQueue.NativeOverride) end
 if OnInit then OnInit.final(function (require)
     require "SetUtils"
+    require "DoublyLinkedList"
     DialogQueue.Init()
 end) end
 end
